@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang ="en"> 
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0"> <!-- makes sure content is visible on mobile phones-->
+        <title>Aaron Carbonell Portfolio Website</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!--Replace later with own fonts if desired-->
+        <link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/name tag.JPG" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class ="hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class = "nav__list">
+                    <li class = "nav__item"><a href ="index.html" class = "nav__link">Home</a></li>
+                    <li class = "nav__item"><a href ="index.html#workexp" class = "nav__link">My Work Experience</a></li>
+                    <li class = "nav__item"><a href ="index.html#about" class = "nav__link">About Me</a></li>
+                    <li class = "nav__item"><a href ="index.html#work" class = "nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                The <strong> Greedy Robot </strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">How I learned the Greedy algorithm</p>
+            <img src="images/walle.jpg" alt="" class="intro__img">
+
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p>For a Data Structures & Algorithms course I took in Fall 2020, I programmed a virtual robot that can find the shortest distance to a treasure located on a 
+                2-dimensional grid. A caveat of this project was that the robot could not move diagonally, only up, down, left, and right.</p>
+            <img src="images/greedy-robot.jpg" alt="">
+            <p>To build the robot, I used C++ along with object-oriented design knowledge to create efficient code.</p>
+            <p>Throughout this project, I was able to fully understand and apply the concept of recursion to build an algorithm that calculates the robot's shortest possible moves
+                until it locates the treasure.
+            </p>
+        </div>
+        
+
+        <!--Footer-->
+        <footer class = "footer">
+            <a href="mailto:aaroncar371@gmail.com" class="footer__link">aaroncar371@gmail.com</a>
+            <ul class="social-list"> 
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/aaroncar206">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.github.com/aaroncar206">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://app.joinhandshake.com/stu/users/19073792">
+                        <i class="fas fa-handshake"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/aaroncarbohnellz/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

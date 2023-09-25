@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang ="en"> 
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0"> <!-- makes sure content is visible on mobile phones-->
+        <title>Aaron Carbonell Portfolio Website</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!--Replace later with own fonts if desired-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@356&display=swap|Lato&subset=latin,latin-ext" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/name tag.JPG" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class ="hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class = "nav__list">
+                    <li class = "nav__item"><a href ="#home" class = "nav__link">Home</a></li>
+                    <li class = "nav__item"><a href ="#workexp" class = "nav__link">My Work Experience</a></li>
+                    <li class = "nav__item"><a href ="#about" class = "nav__link">About Me</a></li>
+                    <li class = "nav__item"><a href ="#work" class = "nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hello, I am <strong>Aaron Carbonell</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Front-End Dev</p>
+            <img src="images/portpic.jpg" alt="picture of Aaron smiling" class="intro__img">
+
+        </section>
+        
+        <!--My Work Experience-->
+        <section class="my-workexp" id="workexp">
+            <h2 class="section__title section__title--workexp">My Work Experience</h2>
+            <div class="exps">
+                <div class="exp">
+                    <h3>IT Intern - Lavner Education</h3>
+                    <p>Wrote at least 10 unit tests per day to provide code coverage on camp hardware, 
+                        Instructed 200+ students on various technology topics and coding (Java, C++, Scratch), 
+                        Awarded Instructor of the Month for providing outstanding instruction,
+                        Performed setup/maintenance on camp hardware to ensure tech operates smoothly throughout the day.
+                    </p>
+                </div>
+
+                <div class="exp">
+                    <h3>Customer Service Rep - South Bellevue Community Center</h3>
+                    <p>Increased membership sign-up rate by 7.5% from previous year, 
+                        Utilize BlueRec Recreation Management System to register new members, 
+                        checkout equipment, sell gym passes, and update account info, 
+                        Listen to a multitude of guests’ questions to satisfy their needs, 
+                        Keep front desk organized and well-stocked, 
+                        Passed down important information from the day’s shift to other coworkers working next
+                    </p>
+                </div>
+
+                <div class="exp">
+                    <h3>Office Assistant - Capital Industries</h3>
+                    <p>Filed and organized company documents, Created hundreds of work orders to authorize metal fabrication to factory,
+                        Helped keep track of metal inventory using Global software,
+                        Dealt with many professionals around the office to assist with various company projects,
+                    </p>
+                </div>
+            </div>
+
+            <a href="#work" class="btn">My Projects</a>
+
+        </section>
+
+        <!--About me-->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I Am</h2>
+            <p class="section__subtitle section__subtitle--about">Front End Developer based out of Seattle</p>
+
+            <div class="about-me__body">
+                <p>Welcome to my portfolio website! My name is Aaron Carbonell. I am an aspiring front-end developer who has a deep passion for building 
+                beautiful, accessible, and easy-to-use technology for all kinds of people to use. In June 2023, I graduated from the University of Washington, 
+                Bothell, where I received my Bachelor's of Science in Computer Science and Software Engineering. My experience includes 3 years of Object-oriented 
+                programming with Java and C++, and also have intermediate experience with SQL, Javascript, HTML, CSS, and React framework. I am currently in search of 
+                Entry Level Front-End Software Engineering positions in (but not limited to) the Greater Seattle area.</p>
+
+               <p>Please feel free to look through this self-built page to learn more about my work and programming experience!</p> 
+
+            </div>
+            <img src="images/2023_AaronUWGrad-3.jpg" alt="Aaron posing at the UW Quad" class="about-me__img">
+
+        </section>
+
+        <!--My Projects-->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My Projects</h2>
+            <p class="section__subtitle section__subtitle--work">A collection of programming projects I've worked on</p>
+
+            <div class="portfolio">
+                <a href="portfolio-item.html" class="portolio__item">
+                    <img src="images/spotify-clone.JPG" alt="" class="portfolio__img">
+                </a>
+
+                <a href="portfolio-grdyrbt.html" class="portolio__item">
+                    <img src="images/grdyrbt.png" alt="" class="portfolio__img">
+                </a>
+
+                <a href="portfolio-merkle.html" class="portolio__item">
+                    <img src="images/merkle-tree.png" alt="" class="portfolio__img">
+                </a>
+
+                <a href="portfolio-converswim.html" class="portolio__item">
+                    <img src="images/swimlane.JPG" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class = "footer">
+            <a href="mailto:aaroncar371@gmail.com" class="footer__link">aaroncar371@gmail.com</a>
+            <ul class="social-list"> 
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/aaroncar206">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.github.com/aaroncar206">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://app.joinhandshake.com/stu/users/19073792">
+                        <i class="fas fa-handshake"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/aaroncarbohnellz/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

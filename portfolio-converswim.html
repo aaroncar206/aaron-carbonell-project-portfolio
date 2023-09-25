@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang ="en"> 
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0"> <!-- makes sure content is visible on mobile phones-->
+        <title>Aaron Carbonell Portfolio Website</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!--Replace later with own fonts if desired-->
+        <link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/name tag.JPG" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class ="hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class = "nav__list">
+                    <li class = "nav__item"><a href ="index.html" class = "nav__link">Home</a></li>
+                    <li class = "nav__item"><a href ="index.html#workexp" class = "nav__link">My Work Experience</a></li>
+                    <li class = "nav__item"><a href ="index.html#about" class = "nav__link">About Me</a></li>
+                    <li class = "nav__item"><a href ="index.html#work" class = "nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                This is <strong>Converswim</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">A conversation reflection app</p>
+            <img src="images/converswim-logo.JPG" alt="" class="intro__img">
+
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p>For my senior year capstone, I had the opportunity to work alongside Annuska Zolyomi to design an application called Converswim, 
+                a conversation reflection tool meant to be used by autistic adults. The motivation to develop this app came from prior research 
+                conducted by Zolyomi which explored the challenges that autistic adults face in reading emotion, body language, and other non-verbal social cues
+                when it comes to conversating with neurotypical individuals.
+            </p>
+            <img src="images/swimlane.JPG" alt="">
+            <p>Most of my capstone work was done in the design phase, in which I was able to conduct several usability studies
+                with a paper-prototype that demonstrates initial screen designs and intended interactions of the application.
+                During our research, our goal was to acquire data on the usability of the application, feature usage, and overall
+                first impressions. My research team consisting of Professor Zolyomi, Hiba Hasan, a Psychology student at UW
+                Bothell, and I received insightful feedback on how to continually optimize the app to assure that the application
+                suits our target users’ needs.
+                </p>
+            <p>The next steps of this project would be to start implementing the prototype into a
+                functional web application. This would entail choosing an appropriate framework to develop the user interface
+                and database to support image customization requests. My recommendation is React (with Javascript, HTML,
+                and CSS) to develop the UI. To support image requests, I would utilize a combination of an object storage
+                system such as Amazon S3 with a NoSQL database such as MongoDB to handle image history queries. These
+                next steps yield a great project for capstone students to take on in the future.  
+            </p>
+        </div>
+        
+
+        <!--Footer-->
+        <footer class = "footer">
+            <a href="mailto:aaroncar371@gmail.com" class="footer__link">aaroncar371@gmail.com</a>
+            <ul class="social-list"> 
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/aaroncar206">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.github.com/aaroncar206">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://app.joinhandshake.com/stu/users/19073792">
+                        <i class="fas fa-handshake"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/aaroncarbohnellz/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
