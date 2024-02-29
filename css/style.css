@@ -5,8 +5,9 @@
 }
 
 :root{
-    --ff-primary: 'Montserrat', sans-serif;
+    --ff-primary: 'Montserrat', sans-serif; 
     --ff-secondary: 'Lato', monospace;
+    font-weight: 250;
 
     --fw-reg: 356; 
     --fw-bold: 900;
@@ -106,7 +107,8 @@ h2{
 }
 
 h3{
-    font-size: var(--fs-h3)
+    font-size: var(--fs-h3);
+    text-align: center;
 }
 
 .section__title{
@@ -265,7 +267,6 @@ header {
 
 .intro__img{
     box-shadow: var(--bs);
-  /* height: 150px; */
 }
 
 @media (min-width:600px){
@@ -486,12 +487,15 @@ header {
    padding: 0 2em 2em; 
    max-width: 1000px;
    margin: 0 auto;
+   font-family: var(--ff-primary);
+   
 }
 
-.portfolio-item-individual p {
+.portfolio-item-individual p, li {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    font-family: var(--ff-primary);
 }
 
 /* Individual portfolio item styles */
@@ -500,10 +504,16 @@ header {
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
+    font-family: var(--ff-primary);
 }
 
 .portfolio-item-individual p {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    font-family: var(--ff-primary);
+}
+
+.thumbnail {
+    margin-bottom: 25px;
 }
